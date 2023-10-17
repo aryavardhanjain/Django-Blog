@@ -2,10 +2,10 @@
 
 {% block body %}
 
-  <h3 class="text-uppercase text-warning" style="letter-spacing: 2px;">Category - {{ category }}</h3>
+<h3 class="text-uppercase text-warning" style="letter-spacing: 2px;">Search Results</h3>
   <div class="row mb-2">
-    {% if posts %}
-    {% for post in posts %}
+    {% if blogs %}
+    {% for post in blogs %}
       <div class="col-md-6">
         <div class="card border-0" >
           <div class="card-body">
@@ -20,7 +20,5 @@
     <p>No Posts Found</p>
     {% endif %}
   </div>
-
-</div>
 
 {% endblock %}
